@@ -3,6 +3,7 @@ package _01;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @Entity
 @Table(name = "_01_wizard_deposits")
@@ -162,5 +163,22 @@ public class WizardDeposits {
 
     public void setDepositExpired(boolean depositExpired) {
         this.depositExpired = depositExpired;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (o == null || getClass() != o.getClass()) return false;
+
+        WizardDeposits that = (WizardDeposits) o;
+        return id == that.id &&
+                firstName.equals(that.firstName) &&
+                lastName.equals(that.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName);
     }
 }
