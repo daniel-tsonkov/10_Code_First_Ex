@@ -19,4 +19,10 @@ public class WizardDeposits {
     private String notes;
 
     private int age;
+
+    @Column(name = "magic_wand_creator", length = 100)
+    private String magicWandCreator;
+
+    @Column(name = "magic_wand_size")
+    private short magicWandSize;
 }
