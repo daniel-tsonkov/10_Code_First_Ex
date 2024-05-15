@@ -181,4 +181,6 @@ public class WizardDeposits {
     public int hashCode() {
         return Objects.hash(id, firstName, lastName);
     }
+
+    //час 1:09
 }
