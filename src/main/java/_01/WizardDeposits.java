@@ -49,5 +49,118 @@ public class WizardDeposits {
     @Column(name = "is_deposit_expired")
     private boolean depositExpired;
 
+    public WizardDeposits() {
+    }
 
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getNotes() {
+        return this.notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getMagicWandCreator() {
+        return this.magicWandCreator;
+    }
+
+    public void setMagicWandCreator(String magicWandCreator) {
+        this.magicWandCreator = magicWandCreator;
+    }
+
+    public short getMagicWandSize() {
+        return this.magicWandSize;
+    }
+
+    public void setMagicWandSize(short magicWandSize) {
+        this.magicWandSize = magicWandSize;
+    }
+
+    public String getDepositGroup() {
+        return this.depositGroup;
+    }
+
+    public void setDepositGroup(String depositGroup) {
+        this.depositGroup = depositGroup;
+    }
+
+    public LocalDateTime getDepositStartDate() {
+        return this.depositStartDate;
+    }
+
+    public void setDepositStartDate(LocalDateTime depositStartDate) {
+        this.depositStartDate = depositStartDate;
+    }
+
+    public BigDecimal getDepositAmount() {
+        return this.depositAmount;
+    }
+
+    public void setDepositAmount(BigDecimal depositAmount) {
+        this.depositAmount = depositAmount;
+    }
+
+    public BigDecimal getDepositInterest() {
+        return this.depositInterest;
+    }
+
+    public void setDepositInterest(BigDecimal depositInterest) {
+        this.depositInterest = depositInterest;
+    }
+
+    public BigDecimal getDepositCharge() {
+        return this.depositCharge;
+    }
+
+    public void setDepositCharge(BigDecimal depositCharge) {
+        this.depositCharge = depositCharge;
+    }
+
+    public LocalDateTime getDepositExpirationDate() {
+        return this.depositExpirationDate;
+    }
+
+    public void setDepositExpirationDate(LocalDateTime depositExpirationDate) {
+        this.depositExpirationDate = depositExpirationDate;
+    }
+
+    public boolean isDepositExpired() {
+        return this.depositExpired;
+    }
+
+    public void setDepositExpired(boolean depositExpired) {
+        this.depositExpired = depositExpired;
+    }
 }
