@@ -10,6 +10,7 @@ public class Sale {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(nullable = false)
     private LocalDate date;
 
     @ManyToOne(optional = false)
