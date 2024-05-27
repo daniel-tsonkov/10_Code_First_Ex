@@ -17,10 +17,10 @@ public class Person {
     @Column(name = "phone_number")
     private String phoneNumber;
 
-    public Person() {
+    protected Person() {
     }
 
-    public Person(String firstName, String lastName, String phoneNumber) {
+    protected Person(String firstName, String lastName, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
