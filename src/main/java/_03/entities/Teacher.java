@@ -1,4 +1,5 @@
 package _03.entities;
 
-public class Teacher {
+public class Teacher extends Person{
+
 }
