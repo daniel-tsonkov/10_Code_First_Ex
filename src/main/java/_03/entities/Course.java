@@ -2,6 +2,7 @@ package _03.entities;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Entity(name = "courses")
 public class Course {
@@ -22,6 +23,12 @@ public class Course {
     private LocalDate endDate;
 
     private int credits;
+
+    @ManyToMany
+    private Set<Student> students;
+
+    @ManyToOne
+    private Teacher teacher;
 
     public Course() {}
     public Course(int id, String name, String description, LocalDate startDate, LocalDate endDate, int credits) {

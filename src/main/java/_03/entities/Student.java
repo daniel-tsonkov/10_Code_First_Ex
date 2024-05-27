@@ -1,6 +1,7 @@
 package _03.entities;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity(name = "students")
 public class Student extends Person {
@@ -9,6 +10,9 @@ public class Student extends Person {
     private float averageGrade;
 
     private int attendance;
+
+    @ManyToMany
+    private Set<Course> courses;
 
     public Student() {
         super();

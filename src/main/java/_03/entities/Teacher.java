@@ -2,6 +2,8 @@ package _03.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import java.util.Set;
 
 @Entity(name = "teachers")
 public class Teacher extends Person {
@@ -10,6 +12,9 @@ public class Teacher extends Person {
 
     @Column(name = "salary_per_hour", nullable = false)
     private float salaryPehHour;
+
+    @OneToMany
+    private Set<Course> courses;
 
     public Teacher() {
         super();
