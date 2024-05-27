@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Set;
 
-@Entity(name = "courses")
+@Entity(name = "_03_courses")
 public class Course {
 
     @Id

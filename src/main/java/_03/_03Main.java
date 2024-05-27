@@ -1,14 +1,9 @@
 package _03;
 
-import _02.entities.Customer;
-import _02.entities.Product;
-import _02.entities.Sale;
-import _02.entities.StoreLoacation;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.math.BigDecimal;
 
 public class _03Main
 {

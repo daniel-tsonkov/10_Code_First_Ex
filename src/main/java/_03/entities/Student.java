@@ -3,7 +3,7 @@ package _03.entities;
 import javax.persistence.*;
 import java.util.Set;
 
-@Entity(name = "students")
+@Entity(name = "_03_students")
 public class Student extends Person {
 
     @Column(name = "average_grade", nullable = false)
